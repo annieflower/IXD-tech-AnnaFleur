@@ -1,0 +1,27 @@
+.hs-chart-wrapper{
+  width: 200px;
+  display: inline-block;
+  position: relative;
+}
+.hs-chart-wrapper svg{
+  transform: rotate(-90deg);
+}
+.hs-chart-progress{
+  stroke-opacity:.8;
+}
+.hs-chart-center-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.chartTip {
+  padding: 5px 10px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 4px;
+  background-color: rgba(255,255,255,.8);
+  box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+  position: absolute;
+  z-index: 50;
+  max-width: 250px;
+}

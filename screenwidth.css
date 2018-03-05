@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Asap Condensed', verdana, sans-serif;
+    font-size: 20px;
+    font-color: white;
+    height: 100%;
+}
+
+.Benzine{
+
+    background-color:#484848;
+    grid-area: countdown;
+    padding: 10px; 
+    margin: 5px; 
+    
+}
+/*#druppel{
+    max-width: 100%;
+    height: auto;
+
+}*/
+
+.Voedsel{
+    background-color: #484848;
+    grid-area: voedsel;
+    padding: 10px;
+    margin: 5px;
+}
+.Snelheid{
+    background-color: #484848;
+    grid-area: snelheid;
+    padding: 10px;
+    margin: 5px;
+  
+}
+
+.tijd{
+    background-color: #484848;
+    grid-area: klok;
+    padding: 10px;
+    margin: 5px;
+
+
+}
+.grid-container{
+  display: grid;
+
+  grid-template-areas: 
+        "countdown"
+        "voedsel"
+        "snelheid"
+        "klok"; 
+}
+
+.Benzine{
+  grid-area: countdown;
+} 
+
+.Voedsel{
+  grid-area: voedsel;
+}
+
+.Snelheid{
+  grid-area: snelheid;
+}
+.tijd{
+    grid-area: tijd;
+}
+
+@media only screen and (min-width: 300px) { 
+    .grid-container  {
+        display:grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+        "countdown"
+        "voedsel"
+        "snelheid" 
+        "klok";
+    }            
+
+@media only screen and (min-width: 600px) {     
+    .grid-container  {
+        display:grid;
+
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+
+        grid-template-areas:
+        "countdown voedsel"
+        "snelheid klok";
+    } 
+
+
+@media only screen and (min-width: 850px) { 
+    .grid-container  {
+        display:grid;
+
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-areas:
+        "countdown voedsel"
+        "snelheid klok";
+    } 
+}
+
